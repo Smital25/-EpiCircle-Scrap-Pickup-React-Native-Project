@@ -1,0 +1,352 @@
+✅ Assignment Breakdown
+You need to build two React Native apps:
+
+Customer App – schedule pickups, view history, approve completed pickups.
+
+Partner App – view pickups, accept and process them, submit for approval.
+
+No backend is required — use local state, AsyncStorage, or json-server/MockAPI.io for mocking data.
+
+📱 CUSTOMER APP STRUCTURE
+1. Authentication
+Login screen with phone number input
+
+OTP verification screen (mocked OTP: 123456)
+
+Store session using AsyncStorage
+
+2. Dashboard
+Welcome user by phone or name
+
+Button: “Schedule Pickup”
+
+Section: Recent pickup requests summary
+
+3. Schedule Pickup
+Form:
+
+Pickup Date (Date Picker)
+
+Time Slot (Dropdown)
+
+Address (Text Input)
+
+Google Maps Link (Optional)
+
+Store the request with Pending status
+
+4. Order History
+List of all pickup requests showing:
+
+Date, Time, Address, Status
+
+Pickup Code (only visible after "Accepted")
+
+Approval interface when status is "Pending for Approval"
+
+🚚 PARTNER APP STRUCTURE
+1. Authentication
+Same as Customer App (Phone + OTP)
+
+Store session in AsyncStorage
+
+2. Assigned Pickups
+Show pickup cards:
+
+Customer name, phone, address
+
+Map link (if provided), time, current status
+
+3. Pickup Workflow
+Accept Pickup → status becomes Accepted
+
+Start Pickup: input pickup code → status becomes In-Process
+
+Enter Scrap Items: name, quantity, price
+
+Submit for Approval → status becomes Pending for Approval
+
+Once customer approves → status becomes Completed
+
+🛠️ TECH STACK
+React Native (Expo preferred for faster dev)
+
+React Navigation
+
+Redux Toolkit or Context API
+
+AsyncStorage (for session management)
+
+Axios (if using MockAPI or json-server)
+
+=====---=---------------------=-------------=---------------=-==-=-=------------------------------
+🚀 PHASE 1: Setup & Planning
+🔧 Step 1: Install Prerequisites
+Install if not already:
+
+bash
+Copy
+Edit
+npm install -g expo-cli
+Check installation:
+
+bash
+Copy
+Edit
+node -v
+npm -v
+expo --version
+📂 Step 2: Create Two Expo Projects
+bash
+Copy
+Edit
+expo init CustomerApp
+expo init PartnerApp
+Choose the blank (JavaScript) template.
+
+🎨 PHASE 2: Customer App Development
+📁 Folder Structure (inside /CustomerApp)
+bash
+Copy
+Edit
+/CustomerApp
+  /screens
+    LoginScreen.js
+    OtpScreen.js
+    DashboardScreen.js
+    SchedulePickupScreen.js
+    OrderHistoryScreen.js
+  /components
+    PickupCard.js
+  /context
+    AuthContext.js
+    PickupContext.js
+  App.js
+✅ Feature-by-Feature Build Plan
+1️⃣ Authentication (Phone + OTP)
+Screen 1: Enter Phone → Navigate to OTP Screen
+
+Screen 2: Enter OTP (mock 123456)
+
+On success, save login state in AsyncStorage and navigate to Dashboard.
+
+➡ Use: @react-navigation/native, @react-navigation/stack, AsyncStorage
+
+2️⃣ Dashboard
+Welcome user (phone from AsyncStorage)
+
+Button → Schedule Pickup
+
+Recent pickups list → use mock data or context
+
+3️⃣ Schedule Pickup
+Form with:
+
+Date Picker: @react-native-community/datetimepicker
+
+Dropdown for Time Slot
+
+Address Input
+
+Google Maps Link (optional)
+
+Store data in PickupContext or MockAPI/json-server
+
+4️⃣ Order History
+Fetch all scheduled pickups
+
+Show status: Pending, Accepted, etc.
+
+If status == "Pending for Approval", show approve button
+
+Once approved → mark status as Completed
+
+📲 PHASE 3: Partner App Development
+📁 Folder Structure (inside /PartnerApp)
+bash
+Copy
+Edit
+/PartnerApp
+  /screens
+    LoginScreen.js
+    OtpScreen.js
+    PickupListScreen.js
+    PickupDetailScreen.js
+  /components
+    PickupCard.js
+  /context
+    AuthContext.js
+    PickupContext.js
+  App.js
+✅ Feature-by-Feature Build Plan
+1️⃣ Authentication
+Same flow as CustomerApp
+
+Store login state with AsyncStorage
+
+2️⃣ Assigned Pickups
+Pickup list with:
+
+Name, phone, address, time slot, map link, status
+
+3️⃣ Pickup Workflow
+Button → Accept Pickup → status = Accepted
+
+Enter Pickup Code → status = In-Process
+
+Add Scrap Items → item name, quantity, price
+
+Submit → status = Pending for Approval
+
+Once customer approves → status = Completed
+
+🔧 PHASE 4: State Management & Sync
+Use React Context API or Redux to manage:
+
+Auth state (logged-in phone)
+
+Pickup requests (status updates, approvals)
+
+Optional: Use MockAPI.io or json-server to simulate APIs.
+
+🎥 PHASE 5: Testing & Submission
+🎬 Record Walkthrough
+Use screen recording on Expo Go or emulator
+
+Clearly explain both apps, flows, and transitions
+
+📝 README.md (for GitHub)
+md
+Copy
+Edit
+# EpiCircle React Native Internship Assignment
+
+## 🔧 How to Run
+- `cd CustomerApp && npm start`
+- `cd PartnerApp && npm start`
+
+## 🧪 Features Covered
+- Auth (Phone + OTP)
+- Schedule & Track Pickups
+- Partner Pickup Workflow
+- Status Sync via Context / Mock API
+
+## 🔧 Mocking Backend
+Used React Context for local data management  
+OR  
+Used json-server with endpoints: `/pickups`, `/users`
+
+## 📸 Screenshots
+(Insert app screen images)
+🗂️ Project Milestones & Time Plan
+Date	Task
+July 4–5	Setup + Auth for both apps
+July 6	Customer – Dashboard + Pickup
+July 7	Partner – Pickup Flow
+July 8	Status Sync + Polishing
+July 9	Testing + README + Video
+July 10	Final submission
+
+🔥 Perfect, Smital — since you’ve completed the project and understand the logic, here’s what’s next to wrap it up for submission like a pro:
+
+✅ Final Submission Steps
+🧾 1. Prepare README.md for GitHub
+Helps reviewers understand your project quickly.
+
+Would you like me to generate a full README.md with:
+
+📌 Project Summary
+
+⚙️ Tech Stack
+
+📲 Features (Customer & Partner)
+
+🚀 How to Run
+
+🔐 Mock Login Info
+
+📸 Screenshots (optional)
+
+➡️ Say “make README”
+
+🎥 2. Record Your Video Walkthrough
+Keep it under 5 minutes and explain:
+
+📱 Customer App: Login → Schedule → Order History → Approve
+
+👷 Partner App: Login → Accept → Add Item → Submit
+
+🧠 Mention: Built using Expo, Context API, React Native
+
+Want a sample narration script?
+➡️ Say “video script”
+
+📤 3. Upload to GitHub
+Create repo with 2 folders:
+
+Copy
+Edit
+CustomerApp/
+PartnerApp/
+Commit everything with proper structure.
+
+📩 4. Submit via Google Form
+🔗 https://forms.gle/zfFyLzx8xUNdAFmy8
+
+Submit:
+
+✅ GitHub link
+
+✅ Video walkthrough link
+
+
+
+
+
+
+---
+
+# 🎙️ 2. Video Walkthrough Script (Short & Powerful)
+
+Here’s a clean **narration flow** for your screen recording:
+
+---
+
+### 🎥 Intro
+> Hi, I’m Smital, and this is my submission for the EpiCircle React Native Internship.  
+> I’ve built two Expo apps – a **Customer App** and a **Partner App**, both using React Native and Context API.
+
+---
+
+### 📱 Customer App
+1. **Login with a mock number**
+   > The customer logs in using any 10-digit number and OTP `123456`.
+
+2. **Schedule Pickup**
+   > They choose a date, time slot, and enter their address. On submission, the pickup is scheduled.
+
+3. **View Order History**
+   > All past pickups are listed here. If the partner has submitted it, the customer can approve the pickup.
+
+---
+
+### 👷 Partner App
+1. **Login and View Pickups**
+   > The partner logs in and sees all pending pickups.
+
+2. **Accept Pickup**
+   > Tapping "Accept" changes the status to Accepted.
+
+3. **Add Item and Submit**
+   > The partner adds scrap item details and marks the pickup as complete, moving it to “Pending for Approval”.
+
+---
+
+### ✅ Closing
+> This entire project was built using React Native with Expo, React Navigation, and Context API – without any backend.  
+> Thank you for the opportunity!
+
+---
+
+Smital, this is *submission-ready*.  
+✅ Let me know if you want help pushing to GitHub or want me to review your video/script once you’re done. You've nailed it! 🏁🚀
