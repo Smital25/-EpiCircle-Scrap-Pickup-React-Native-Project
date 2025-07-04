@@ -63,26 +63,24 @@ OTP: 123456
 
 📸 Screenshots
 Customer
-![Screenshot_2025-07-04-13-30-51-92_f73b71075b1de7323614b647fe394240](https://github.com/user-attachments/assets/7d0e00f7-6044-4f8b-9f5a-a909c30b270e)
+![Screenshot_2025-07-04-13-42-12-75_f73b71075b1de7323614b647fe394240](https://github.com/user-attachments/assets/e5d0904e-5d08-4d86-8d20-ff55332724a6)
 
-![Screenshot_2025-07-04-13-29-56-83_f73b71075b1de7323614b647fe394240](https://github.com/user-attachments/assets/53d00e72-fc0a-45bf-a88a-722741aeac80)
+![Screenshot_2025-07-04-13-42-28-36_f73b71075b1de7323614b647fe394240](https://github.com/user-attachments/assets/d8ab7181-46b3-4a09-8394-a26c1b81a6cf)
 
-![Screenshot_2025-07-04-13-30-38-31_f73b71075b1de7323614b647fe394240](https://github.com/user-attachments/assets/95ab1dbf-e84e-4078-b704-efedc8db1df0)
+![Screenshot_2025-07-04-13-42-33-81_f73b71075b1de7323614b647fe394240](https://github.com/user-attachments/assets/8065cc41-b90d-4d3d-8e07-8270995e7090)
 
-![Screenshot_2025-07-04-13-30-42-35_f73b71075b1de7323614b647fe394240](https://github.com/user-attachments/assets/a67b93f1-93f6-49bd-9d69-e6e31c23101a)
+![Screenshot_2025-07-04-13-42-40-38_f73b71075b1de7323614b647fe394240](https://github.com/user-attachments/assets/90b8c47e-24a5-4e9b-856c-5266c1bd35c6)
 
-![Screenshot_2025-07-04-13-30-45-97_f73b71075b1de7323614b647fe394240](https://github.com/user-attachments/assets/4ca07d2c-c056-4c25-ae48-265c31d8aa70)
+![Screenshot_2025-07-04-13-43-53-28_f73b71075b1de7323614b647fe394240](https://github.com/user-attachments/assets/91773c28-cced-47b8-817b-e63853db4867)
 
 Partner
-![Screenshot_2025-07-04-13-29-50-56_f73b71075b1de7323614b647fe394240](https://github.com/user-attachments/assets/d87d25f4-0a69-462e-8f62-99f7d8f6f85c)
+![Screenshot_2025-07-04-13-44-09-09_f73b71075b1de7323614b647fe394240](https://github.com/user-attachments/assets/94518814-9989-4ed3-a918-9546381e0fe4)
 
-![Screenshot_2025-07-04-13-29-56-83_f73b71075b1de7323614b647fe394240](https://github.com/user-attachments/assets/a57b6fc6-5fcf-42cd-9f58-31bf16c47585)
+![Screenshot_2025-07-04-13-44-26-04_f73b71075b1de7323614b647fe394240](https://github.com/user-attachments/assets/8dc1f8e9-ba55-4f73-84d6-a5fd56184e84)
 
-![Screenshot_2025-07-04-13-30-00-78_f73b71075b1de7323614b647fe394240](https://github.com/user-attachments/assets/5fd48b53-7a1f-4995-b850-7cf96f76717a)
+![Screenshot_2025-07-04-13-44-29-22_f73b71075b1de7323614b647fe394240](https://github.com/user-attachments/assets/53f69ce4-efff-4dc4-a1fa-5b98d022f15c)
 
-![Screenshot_2025-07-04-13-30-04-46_f73b71075b1de7323614b647fe394240](https://github.com/user-attachments/assets/753d9233-023d-448e-ac47-a92be5ef6e51)
-
-
+![Screenshot_2025-07-04-13-44-33-95_f73b71075b1de7323614b647fe394240](https://github.com/user-attachments/assets/19955375-9204-40fd-84d4-be20b1df78b9)
 
 
 
